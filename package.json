@@ -4,14 +4,10 @@
   "silky-version": "2.0.0",
   "silky-plugin": {
     "hbs": {
-      "__stop": false,
-      "__source": "./plugin/hbs",
-      "__setting": {
-        "root": "/template",
-        "data-config": "hbs-data-config.js",
-        "global": "hbs-global.js",
-        "global-root": "__global"
-      }
+      "root": "/template",
+      "data-config": "hbs-data-config.js",
+      "global": "global.js",
+      "global-root": "__global"
     },
     "sp-less": {
       "_env_global": "global.less",
@@ -66,10 +62,11 @@
   },
   "__registry": "https://registry.npmjs.com/",
   "dependencies": {
-    "sp-autoprefixer": "1.0.1",
+    "sp-autoprefixer": "1.0.2",
+    "sp-hbs": "1.0.0",
     "sp-less": "1.0.0",
     "sp-merge": "1.0.0",
-    "sp-mini": "1.0.0",
+    "sp-mini": "1.0.1",
     "sp-proxy": "1.0.0"
   }
 }
