@@ -1,0 +1,29 @@
+<head>
+    <!--测试less全局引用-->
+   <link rel="stylesheet" href="/css/index.css" type="text/css"> 
+   <style>
+    /**测试 autofixer和build时的压缩*/
+     div{
+       display: flex;
+     }
+   </style>
+
+   <!--测试js合并-->
+  <script src="/js/global.js"></script><script src="/js/global-1.js"></script>
+
+  <!--测试build时  html内压缩-->
+  <script>
+    function hellworld(){
+      console.log('ni hao!中文')
+    }
+  </script>
+
+  <!--测试build时  压缩忽略-->
+  <script type="template/handlebars">
+    function hellworld(){
+      console.log('ni hao!')
+    }
+  </script>
+
+
+  </head>

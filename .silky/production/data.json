@@ -1,3 +1,5 @@
 {
-  "testData": "I'm in  production  runtime"
+  "testData": "I'm in  production  runtime",
+  "template": "temp-1",
+  "arr": [{"a":3},{"a":2},{"a":1}]
 }

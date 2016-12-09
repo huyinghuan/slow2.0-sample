@@ -1,5 +1,8 @@
 module.exports = {
-  dataMap:{
-    "hbs-with-data-config": "data-config.json"
+  "moduleMap":{
+    "temp-1":"<__global.__temp>/temp-1"
+  },
+  global: {
+    __temp: "module"
   }
 }

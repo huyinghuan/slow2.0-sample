@@ -3,11 +3,12 @@
   "version": "1.0",
   "silky-version": "2.0.0",
   "silky-plugin": {
-    "hbs": {
-      "root": "/template",
-      "data-config": "hbs-data-config.js",
-      "global": "global.js",
-      "global-root": "__global"
+    "hbs":{
+      "__source": "/Users/hyh/workspace/silky-plugins-3.0/sp-hbs",
+      "__setting":{
+        "root": "/template",
+        "data-config": "hbs-data-config.js"
+      }
     },
     "sp-less": {
       "_env_global": "global.less",
@@ -57,7 +58,8 @@
       "node_modules",
       "(\\/\\.[^/]+)$",
       "plugin",
-      "(\\.tar)$"
+      "(\\.tar)$",
+      "(template/module/)"
     ]
   },
   "__registry": "https://registry.npmjs.com/",
