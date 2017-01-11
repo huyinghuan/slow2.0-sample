@@ -1,6 +1,6 @@
 <head>
     <!--测试less全局引用-->
-   <link rel="stylesheet" href="/css/index.css" type="text/css"> 
+   <link rel="stylesheet" href="/css/index.css" type="text/css" component> 
    <style>
     /**测试 autofixer和build时的压缩*/
      div{
@@ -9,7 +9,8 @@
    </style>
 
    <!--测试js合并-->
-  <script src="/js/global.js"></script><script src="/js/global-1.js"></script>
+  <script src="/js/A-componts.js" component></script>
+  <script src="/js/B-beMerge.js" component></script>
 
   <!--测试build时  html内压缩-->
   <script>

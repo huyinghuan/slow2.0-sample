@@ -1,3 +1,4 @@
 build
 *.tar
 node_modules
+*.log

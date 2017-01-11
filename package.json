@@ -3,12 +3,10 @@
   "version": "1.0",
   "silky-version": "2.0.0",
   "silky-plugin": {
-    "hbs":{
-      "__source": "/Users/hyh/workspace/silky-plugins-3.0/sp-hbs",
-      "__setting":{
-        "root": "/template",
-        "data-config": "hbs-data-config.js"
-      }
+    "hbs": {
+      "root": "/template",
+      "data-config": "hbs-data-config.js",
+      "pub-modules": "modules"
     },
     "sp-less": {
       "_env_global": "global.less",
@@ -17,16 +15,16 @@
       ],
       "ignore": [
         "(css/module/)"
-      ]
+      ],
+      "options": {
+        "paths": [
+          "css"
+        ]
+      }
     },
     "sp-autoprefixer": {
       "html": true
     },
-    "tar-send": {
-      "__stop": true,
-      "__source": "./plugin/tar-send"
-    },
-    "sp-mini": {},
     "sp-merge": [
       {
         "_regexp": true,
@@ -46,11 +44,32 @@
         ]
       }
     ],
-    "sp-proxy": {}
+    "sp-merge-in-html": {
+      "css": {
+        "search": [
+          "less"
+        ],
+        "out": "/css/merge-to-one.css",
+        "appendTo": "head"
+      },
+      "js": {
+        "out": "/js/merge-to-one.js"
+      }
+    },
+    "sp-mini": {
+      "ignore": [
+        "(\\.min\\.js)$",
+        "(\\.min\\.css)$"
+      ],
+      "js": {},
+      "css": {},
+      "html": true
+    }
   },
   "silky": {
     "port": 14422,
-    "index": "index.html"
+    "index": "index.html",
+    "autoindex": true
   },
   "silky-build": {
     "outdir": "./build",
@@ -59,7 +78,8 @@
       "(\\/\\.[^/]+)$",
       "plugin",
       "(\\.tar)$",
-      "(template/module/)"
+      "(template/module/)",
+      "(\\.log)$"
     ]
   },
   "__registry": "https://registry.npmjs.com/",

@@ -1,3 +1,3 @@
-var wowIwillBeMergeAsComponts = function(){
+var wowIwillBeMergeAsCompontsAll = function(){
   console.log('orzZ...')
 }

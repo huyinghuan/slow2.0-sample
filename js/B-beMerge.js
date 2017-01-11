@@ -1,3 +1,3 @@
-var wowIwillBeMergeAsCommon = function(){
+var wowIwillBeMergeAsCommonAll = function(){
   console.log('orzZ...')
 }
